@@ -1,0 +1,211 @@
+/* TODO: Общее для всего файла: отформатируй, стилизация элементов должная идти в том же порядке, в котором они находяться в разметке (Это не касается общей стилизации тегов, она должна от большего к меньшему и распологаться в начале файла) */
+
+@font-face {
+	font-family: "ptsans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/ptsans.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ptsansbold";
+	font-style: italic;
+	font-weight: 700;
+	src: url("/fonts/ptsansbold.woff2") format("woff2");
+	font-display: swap;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: "ptsans";
+	font-size: 16px;
+	line-height: 24px;
+}
+
+main, header, footer{
+	margin: 0 auto;
+	width: 1200px;
+	
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+h3 {
+	font-family: "ptsansbold";
+	line-height: 30px;
+	font-weight: 700;
+}
+
+button{
+	font-family: "ptsansbold";
+	color: #fff;
+	font-weight: 700;
+	line-height: 40px;
+	border-radius: 4px;
+}
+
+header{
+	font-family: "ptsansbold";
+	line-height: 26px;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 0px;
+	height: 65px;
+} 
+
+legend{
+	font-family: "ptsansbold";
+	line-height: 26px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header-navigation{
+	padding-left: 70px;
+}
+
+.header-navigation-list, .user-navigation {
+	display: inline-block;
+	margin: 0;
+}
+
+.header-navigation-list li{
+	display: inline-block;
+	margin-right: 30px;
+	
+}
+
+.user-navigation li {
+	display: inline-block;
+	
+}
+
+.user-navigation {
+	padding-left: 240px;
+}
+
+.user-navigation-btn {
+	border: none;
+	background-color: #fff;
+	margin-left: 20px;
+	
+}
+.action{
+	color: #fff;
+	background:#756157;
+	border-radius: 6px;
+	padding: 0px 30px;
+	margin-bottom: 15px;
+}
+
+
+.main {
+	background-image: url(../img/index-background.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: cover;
+	width: 1200px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-features-div{
+	text-align: center;
+}
+
+.features-list p{
+	text-align: center;
+}
+
+.main-features span {
+	font-family: "ptsansbold";
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+
+
+.features-list-first,.features-list-second{
+	background-color: #83B3D3;
+	color: #fff;
+}
+
+
+.sub-btn {
+	color: #fff;
+	background:#756157;
+}
+
+.action-button{
+	background-color: #83B3D3;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.contacts-phone {
+	font-family: "ptsansbold";
+	line-height: 40px;
+	font-weight: 400;
+	font-size: 40px;
+	
+}
+
+.filters-list {
+	background-image: url(../img/index-background.png) ;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+.social {
+	color: #83B3D3;
+}
+
+.catalog-card-information {
+	color: #fff;
+	background:#756157;
+}
+
+.catalog-card-like {
+	background-color: #83B3D3;
+}
+
+.page-item-btn {
+	background-color: #83B3D3;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
