@@ -23,7 +23,7 @@
           </li>
           <li><a href="#">Главная</a></li>
           <li><a href="#">О Седоне</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="./catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="user-navigation">
           <li>
@@ -171,7 +171,8 @@
         <h1 class="visually-hidden">Подписаться</h1>
         <span>Подпишитесь на рассылку</span>
         <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама, <br />честное
+          бойскаутское!
         </p>
         <form class="action-feedback">
           <input type="text" placeholder="Ваш e-mail" />
@@ -197,15 +198,57 @@
       >
       <a href="#"><img src="./svg/HTML Academy.svg" alt="HTML Academy" /></a>
     </footer>
-    <form class="form-action">
-      <fieldset>
-        <legend>поиск гостиницы в Седоне</legend>
-        <label>Дата Заезда:<input type="date" /></label>
-        <label>Дата Выезда:<input type="date" /></label>
-        <label> <input type="Взрослые" /> Взрослые: </label>
-        <label> <input type="Дети" /> Дети: </label>
-      </fieldset>
-      <button class="search-btn" type="submit">Найти</button>
-    </form>
+	 <div class="modal-fade"></div>
+    <section class="modal modal-login">
+      <h2>Поиск гостиницы в Седоне</h2>
+      <button class="modal-close" type="button">
+        <img src="./svg/close.svg" alt="Закрыть" />
+      </button>
+      <form class="search-hotel">
+        <fieldset>
+          <label
+            >Дата Заезда:
+            <input type="date" class="date date-arrival" />
+          </label>
+          <label
+            >Дата Выезда:
+            <input type="date" class="date date-departure" />
+          </label>
+          <div>
+            <label
+              >Взрослые:
+              <span class="search-span">
+                <button class="search-hotel-btn minus-btn">-</button>
+                <input type="text" class="people people-big" value="1" />
+                <button class="search-hotel-btn plus">+</button>
+              </span>
+            </label>
+            <label class="child"
+              >Дети:
+              <span class="search-span">
+                <button class="search-hotel-btn minus">-</button>
+                <input type="text" class="people people-little" value="1" />
+                <button class="search-hotel-btn plus">+</button>
+              </span>
+            </label>
+          </div>
+          <button class="search-btn" type="submit">Найти</button>
+        </fieldset>
+      </form>
+    </section>
+    <script>
+      var link = document.querySelector(".action");
+      var popup = document.querySelector(".modal-login");
+      var close = document.querySelector(".modal-close");
+		var fade = document.querySelector(".modal-fade");
+      link.addEventListener("click", function (evt) {
+        popup.classList.add("modal-show");
+		  fade.classList.add("popup-fade");
+      });
+      close.addEventListener("click", function (evt) {
+        popup.classList.remove("modal-show");
+		  fade.classList.remove("popup-fade");
+      });
+    </script>
   </body>
 </html>
